@@ -21,6 +21,8 @@
       
 <%= render 'microposts/microposts', microposts: @microposts %>
 
+<%= link_to 'お気に入り一覧', favoritings_user_path(current_user), class: 'btn btn-primary btn-sm'%>
+
     </div>
   </div>
 <% else %>

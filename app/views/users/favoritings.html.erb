@@ -18,9 +18,9 @@
       <li class="<%= 'active' if current_page?(favoritings_user_path(@user)) %>"><%= link_to favoritings_user_path(@user) do %>Favoritings <span class="badge"><%= @count_favoritings %></span><% end %></li>
     </ul>
     
-    <%= render 'users', users: @followers %>
+    <%= render 'microposts/microposts', microposts: @favoritings %>
     
     <%= link_to '新規投稿する', root_path , class: "btn btn-success" %>
-
   </div>
 </div>
+
